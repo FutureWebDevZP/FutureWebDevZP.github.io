@@ -37,6 +37,21 @@
       }
       nav ul{
         list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: center;
+      }
+      nav ul li{
+        margin-left: 10px;
+      }
+      nav ul li::after{
+        content:" >> ";
+        color: rgba(9, 0, 0, 0.995);
+      }
+      nav ul: :last-child::after{
+        content:"";
+        color: rgba(9, 0, 0, 0.995);
       }
       nav a{
         text-decoration: none;
